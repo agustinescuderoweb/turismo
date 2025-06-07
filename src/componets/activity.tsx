@@ -11,8 +11,8 @@ function activity() {
     <div id='actividades' className='flex flex-col'>
       <div className='flex flex-col mt-8 justify-center text-center items-center w-full'>
         <h1 className='text-md lg:text-4xl font-extrabold m-4'><span className="font-light">BUSCA</span> TU PROPIA AVENTURA</h1>
-         <div className='w-full flex flex-row justify-center aling-center text-center'><div className="w-full lg:w-[200px] h-px bg-gray-600 my-8"></div><MountainSnow className='w-8 m-4' /><div className="w-full lg:w-[200px] h-px bg-gray-600 my-8"></div></div>
-        <p className='text-md w-full lg:w-[600px]'>¿Estás listo para explorar lo desconocido? En el turismo aventura, cada decisión te lleva por caminos inesperados. ¿Prefieres subir a una cima nevada o internarte en selvas misteriosas? ¿O tal vez desafiar rápidos turbulentos en un río caudaloso? La elección es tuya.</p>
+         <div className='w-full flex flex-row justify-center aling-center text-center'><div className="w-full lg:w-[200px] h-px bg-gray-600 my-8"></div><MountainSnow className='w-16 m-4' /><div className="w-full lg:w-[200px] h-px bg-gray-600 my-8"></div></div>
+        <p className='text-md w-full lg:w-[600px] px-6'>¿Estás listo para explorar lo desconocido? En el turismo aventura, cada decisión te lleva por caminos inesperados. ¿Prefieres subir a una cima nevada o internarte en selvas misteriosas? ¿O tal vez desafiar rápidos turbulentos en un río caudaloso? La elección es tuya.</p>
       </div>
     <div className='flex flex-col lg:flex-row justify-center items-center w-full h-[screen] mt-4'>
   <div className='p-4'>
