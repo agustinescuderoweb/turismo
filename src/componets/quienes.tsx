@@ -17,10 +17,7 @@ function aventura() {
   <div className="lg:absolute lg:top-0 lg:right-0 lg:w-1/2 w-full bg-black/80 h-auto lg:h-screen flex flex-col items-center justify-center text-center gap-6 px-6 py-10">
     <h1 className="text-lg lg:text-4xl text-white">¿Quiénes Somos?</h1>
     <p className="text-sm lg:text-xl text-white max-w-[90%] lg:max-w-[80%]">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-      reprehenderit officiis blanditiis, illo placeat illum at distinctio
-      dignissimos eos magnam iusto voluptates ipsa maiores, iste minima
-      quibusdam quasi ipsam mollitia.
+      Somos un equipo apasionado por el turismo aventura y la exploración responsable. Nuestra misión es conectar a las personas con la naturaleza a través de experiencias únicas que inspiran, desafían y transforman. Creemos en el respeto por el entorno y en la importancia de crear recuerdos auténticos que perduren.
     </p>
   </div>
 </div>

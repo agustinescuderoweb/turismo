@@ -33,9 +33,8 @@ function Hero() {
           <h1 className='text-md lg:text-4xl font-extrabold m-4'><span className="font-light">SOBRE</span>  AVENTURAS</h1>
           <div className='flex flex-row justify-center aling-center text-center'><div className="w-[200px] h-px bg-gray-600 my-8"></div><MountainSnow className='w-8 m-4' /><div className="w-[200px] h-px bg-gray-600 my-8"></div></div>
           <h2 className='text-md lg:text-lg font-bold m-4'>Este es tu planeta, explora sobre el.</h2>
-          <p className='text-sm lg:text-base m-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quaerat fuga, dolorem ratione debitis,
-             at beatae rem iure explicabo, praesentium quasi unde aliquid voluptatem ipsa dicta! 
-             Exercitationem dolorum eum voluptatem?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore, quia tenetur dolor error beatae voluptas magni suscipit optio corrupti vel libero ipsam numquam adipisci accusantium cumque voluptatem nobis odio.</p>
+          <p className='text-sm lg:text-base m-4'>La aventura te espera en cada rincón del planeta. El turismo aventura combina emoción, naturaleza y adrenalina en experiencias inolvidables: desde escalar montañas imponentes hasta cruzar ríos en kayak o recorrer senderos selváticos. Ideal para quienes buscan salir de la rutina y conectar con lo salvaje.</p> 
+          <p>Sumergirse en este tipo de turismo es descubrir paisajes únicos, superar desafíos personales y compartir momentos intensos. Ya sea en bici, a caballo o caminando, la aventura transforma cada viaje en una historia que vale la pena contar.</p>
              <button className='bg-black m-12 p-6'><h1 className='text-white text-lg'>Why Travel with Adventure?</h1></button>
              </div>
          </div>
