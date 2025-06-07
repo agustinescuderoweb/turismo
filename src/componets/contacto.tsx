@@ -17,11 +17,11 @@ export default function Contacto() {
   const handleSubmit = async  (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
-  await fetch('/api/saveContact', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(form),
-  });
+  const res = await fetch('/api/saveContact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(form),
+});
 
 
 
