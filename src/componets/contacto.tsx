@@ -1,17 +1,51 @@
-import React from 'react'
 
-function contacto() {
+"use client";
+import React, { useState } from 'react';
+
+export default function Contacto() {
+  const [form, setForm] = useState({
+    nombre: '',
+    apellido: '',
+    correo: '',
+    mensaje: '',
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  await fetch('/api/saveContact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(form),
+  });
+
+
+
+    if (res.ok) {
+      alert('Mensaje enviado con éxito');
+      setForm({ nombre: '', apellido: '', correo: '', mensaje: '' });
+    } else {
+      alert('Error al enviar el mensaje');
+    }
+  };
+
   return (
     <div id="contactos" className='bg-white h-[screen] flex flex-col lg:flex-row mt-10 p-6 lg:pl-22'> 
       <div className='w-full lg:w-1/2 flex items-center lg:items-center justify-center lg:justify-end mr-[100px]'>
-        <form className="w-sm p-4 bg-white border rounded-md space-y-4">
+    <form  onSubmit={handleSubmit} className="w-sm p-4 bg-white border rounded-md space-y-4">
   <div className="flex flex-col space-x-4">
     <div className="w-full">
       <label className="block text-sm font-medium text-gray-700"></label>
       <input
         type="text"
-        name="apellido"
+        name="nombre"
         placeholder='Nombre'
+        value={form.nombre}
+        onChange={handleChange}
         className="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
       />
@@ -22,6 +56,8 @@ function contacto() {
         type="text"
         name="apellido"
         placeholder='Apellido'
+        value={form.apellido}
+        onChange={handleChange}
         className="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
       />
@@ -31,7 +67,9 @@ function contacto() {
     <input
       type="email"
       name="correo"
-      placeholder='Teléfono'
+      placeholder='correo'
+      value={form.correo}
+      onChange={handleChange}
       className="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       required
     />
@@ -40,7 +78,9 @@ function contacto() {
     <textarea
       name="mensaje"
       placeholder='Escribe tu mensaje acá...'
-      rows="4"
+      rows={4}
+      value={form.mensaje}
+      onChange={handleChange}
       className="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       required
     ></textarea>
@@ -48,7 +88,7 @@ function contacto() {
     <div className='flex justify-end'>
      <button
     type="submit"
-    className="w-[100px] bg-black text-white py-2 rounded-md hover:bg-blue-700 transition mt-2"
+    className="w-[100px] bg-black text-white py-2 rounded-md hover:bg-blue-700 transition mt-2 cursor-pointer"
   >
     Enviar
   </button>
@@ -66,4 +106,3 @@ function contacto() {
   )
 }
 
-export default contacto
