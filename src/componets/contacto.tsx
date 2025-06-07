@@ -10,11 +10,11 @@ export default function Contacto() {
     mensaje: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async  (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
   await fetch('/api/saveContact', {
